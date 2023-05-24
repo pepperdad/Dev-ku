@@ -1,6 +1,9 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
+    //추가항목
+    "ignoreDeprecations": "5.0",
+    //
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -16,9 +19,20 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": [
+        "src/*"
+      ]
     }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
-  "references": [{"path": "./tsconfig.node.json"}]
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
