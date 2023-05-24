@@ -1,5 +1,6 @@
 <script lang="ts">
   import devJeans from './assets/dev-jeans.png'
+  import devKu from './assets/dev-ku.png'
   import {fabric} from 'fabric'
   import {onMount} from 'svelte'
   import Toolbar from './components/Toolbar.svelte'
@@ -22,7 +23,7 @@
     $canvas.setHeight($width * $canvas.getZoom())
 
     fabric.Image.fromURL(
-      devJeans,
+      devKu,
       function (img) {
         img.scaleToWidth($width)
         img.scaleToWidth($width)
@@ -63,7 +64,7 @@
 </script>
 
 <main style={`width: ${width}`}>
-  <h1>~개발진스 짤 만들어 쓰기~</h1>
+  <h1>~데브쿠 짤 만들어 쓰기~</h1>
   <canvas id="canvas" width="2400" height="2400" style="border:1px solid #ccc" />
 </main>
 
