@@ -1,9 +1,11 @@
-import type {fabric} from 'fabric'
-import {writable} from 'svelte/store'
+import type { fabric } from 'fabric'
+import { writable } from 'svelte/store'
 
-import {getRandomInt} from 'src/lib/getRandom'
-import {backgrounds} from 'src/const/colors'
+import { getRandomInt } from 'src/lib/getRandom'
+import { backgrounds } from 'src/const/colors'
 
+import macbookImg from 'src/assets/costume/macbook.png'
+import appleWatchImg from 'src/assets/costume/appleWatch.png'
 import glassesImg from 'src/assets/costume/glasses.png'
 import laptopImg from 'src/assets/costume/laptop.png'
 import hairImg from 'src/assets/costume/hair.png'
@@ -51,12 +53,12 @@ export type CostumeKeys = keyof typeof defaultCostume
 
 export const costumeInfo = {
   glasses: {
-    title: '안경',
-    src: glassesImg,
+    title: '맥북',
+    src: macbookImg,
   },
   hair: {
-    title: '앞머리',
-    src: hairImg,
+    title: '애플워치',
+    src: appleWatchImg,
   },
   laptop: {
     title: '노트북',
