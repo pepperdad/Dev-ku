@@ -122,6 +122,70 @@ export const costumeInfo = {
   },
 }
 
+const aplcu = {
+  glasses: false,
+  hair: false,
+  laptop: false,
+  coffee: false,
+  goggles: false,
+  hairband: false,
+  headphones: false,
+  basketball: false,
+  basketballVest: false,
+  airpot: false,
+  ballCap: false,
+  darkCircles: false,
+  hardHat: false,
+  toast: false,
+  watch: false,
+  sneakers: false,
+  cookie: false,
+}
+
+
+export const headInfo = {
+  glasses: {
+    title: '맥북',
+    src: macbookImg,
+  },
+  hair: {
+    title: '애플워치',
+    src: appleWatchImg,
+  },
+}
+
+export const bodyInfo = {
+  glasses: {
+    title: '맥북',
+    src: macbookImg,
+  },
+  hair: {
+    title: '애플워치',
+    src: appleWatchImg,
+  },
+}
+
+export const faceInfo = {
+  glasses: {
+    title: '맥북',
+    src: macbookImg,
+  },
+  hair: {
+    title: '애플워치',
+    src: appleWatchImg,
+  },
+}
+
+export const handInfo = {
+
+  hair: {
+    title: '애플워치',
+    src: appleWatchImg,
+  },
+}
+
+
+
 export const hasCostume = writable(defaultCostume)
 
 export const toggleCostume = (target: keyof typeof defaultCostume) => {
