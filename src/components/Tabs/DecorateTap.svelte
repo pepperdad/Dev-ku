@@ -215,8 +215,8 @@
     <ul class="categories">
       <button id="category_all_btn" class="category svelte-1j5f1kp" on:click={allActive}>전체</button>
       <button id="category_head_btn" class="category svelte-1j5f1kp" on:click={headActive}>머리</button>
-      <button id="category_body_btn" class="category svelte-1j5f1kp" on:click={faceActive}>얼굴</button>
-      <button id="category_face_btn" class="category svelte-1j5f1kp" on:click={bodyActive}>몸</button>
+      <button id="category_face_btn" class="category svelte-1j5f1kp" on:click={faceActive}>얼굴</button>
+      <button id="category_body_btn" class="category svelte-1j5f1kp" on:click={bodyActive}>몸</button>
       <button id="category_hand_btn" class="category svelte-1j5f1kp" on:click={handActive}>손</button>
     </ul>
     <ul class="toolbar">
