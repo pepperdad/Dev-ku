@@ -4,25 +4,39 @@ import { writable } from 'svelte/store'
 import { getRandomInt } from 'src/lib/getRandom'
 import { backgrounds } from 'src/const/colors'
 
-import macbookImg from 'src/assets/costume/macbook.png'
-import appleWatchImg from 'src/assets/costume/appleWatch.png'
-import glassesImg from 'src/assets/costume/glasses.png'
-import laptopImg from 'src/assets/costume/laptop.png'
-import hairImg from 'src/assets/costume/hair.png'
-import coffeeImg from 'src/assets/costume/coffee.png'
-import gogglesImg from 'src/assets/costume/goggles.png'
-import hairbandImg from 'src/assets/costume/hairband.png'
-import headphonesImg from 'src/assets/costume/headphones.png'
-import basketballImg from 'src/assets/costume/basketball.png'
-import basketballVestImg from 'src/assets/costume/basketballVest.png'
-import airpotImg from 'src/assets/costume/airpot.png'
-import ballCapImg from 'src/assets/costume/ballCap.png'
-import darkCirclesImg from 'src/assets/costume/darkCircles.png'
-import toastImg from 'src/assets/costume/toast.png'
-import watchImg from 'src/assets/costume/watch.png'
-import sneakersImg from 'src/assets/costume/sneakers.png'
-import cookieImg from 'src/assets/costume/cookie.png'
-import hardHatImg from 'src/assets/costume/hardHat.png'
+
+import hand_dogImg from 'src/assets/costume/강아지.png'
+import face_gogglesImg from 'src/assets/costume/고글.png'
+import head_armyCapImg from 'src/assets/costume/군모_그림자ver.png'
+import face_darkCircleImg from 'src/assets/costume/다크서클.png'
+import body_rokaImg from 'src/assets/costume/로카티.png'
+import hand_macSpacegrayImg from 'src/assets/costume/맥_스그.png'
+import hand_macSilverImg from 'src/assets/costume/맥_실버.png'
+import body_apronImg from 'src/assets/costume/미대_앞치마.png'
+import body_whiteCoatImg from 'src/assets/costume/백색가운.png'
+import hand_beakerImg from 'src/assets/costume/비커.png'
+import head_bambooHatImg from 'src/assets/costume/삿갓.png'
+import face_sunglassesImg from 'src/assets/costume/선글라스_테x.png'
+import body_sweatSuitImg from 'src/assets/costume/아디다스_상.png'
+import face_glassesImg from 'src/assets/costume/안경1.png'
+import face_roundGlassesImg from 'src/assets/costume/안경2.png'
+import face_weirdGlassesImg from 'src/assets/costume/안경3.png'
+import hand_appleWatchImg from 'src/assets/costume/애플워치.png'
+import head_airPodsImg from 'src/assets/costume/에어팟.png'
+import face_blushImg from 'src/assets/costume/연지곤지1.png'
+import face_ahamedImg from 'src/assets/costume/연지곤지2.png'
+import face_happyImg from 'src/assets/costume/연지곤지3.png'
+import hand_bigBrushImg from 'src/assets/costume/왕붓.png'
+import hand_milkImg from 'src/assets/costume/우유.png'
+import body_plaidImg from 'src/assets/costume/체크남방.png'
+import face_brightEyesImg from 'src/assets/costume/초롱초롱눈.png'
+import hand_coffeeImg from 'src/assets/costume/커피.png'
+import head_imnotkuImg from 'src/assets/costume/토끼귀.png'
+import face_imnotkuImg from 'src/assets/costume/토끼입.png'
+import head_graduationHatImg from 'src/assets/costume/학사모.png'
+import body_graduationSuitImg from 'src/assets/costume/학위복.png'
+import hand_bookImg from 'src/assets/costume/회계원리.png'
+
 
 export const background = writable(backgrounds[getRandomInt(0, backgrounds.length - 1)])
 
@@ -30,157 +44,306 @@ export const canvas = writable<fabric.Canvas | null>()
 export const width = writable(600)
 
 const defaultCostume = {
-  glasses: false,
-  hair: false,
-  laptop: false,
-  coffee: false,
-  goggles: false,
-  hairband: false,
-  headphones: false,
-  basketball: false,
-  basketballVest: false,
-  airpot: false,
-  ballCap: false,
-  darkCircles: false,
-  hardHat: false,
-  toast: false,
-  watch: false,
-  sneakers: false,
-  cookie: false,
+  hand_dogImg: false,
+  face_gogglesImg: false,
+  head_armyCapImg: false,
+  face_darkCircleImg: false,
+  body_rokaImg: false,
+  hand_macSpacegrayImg: false,
+  hand_macSilverImg: false,
+  body_apronImg: false,
+  body_whiteCoatImg: false,
+  hand_beakerImg: false,
+  head_bambooHatImg: false,
+  face_sunglassesImg: false,
+  body_sweatSuitImg: false,
+  face_glassesImg: false,
+  face_roundGlassesImg: false,
+  face_weirdGlassesImg: false,
+  hand_appleWatchImg: false,
+  head_airPodsImg: false,
+  face_blushImg: false,
+  face_ahamedImg: false,
+  face_happyImg: false,
+  hand_bigBrushImg: false,
+  hand_milkImg: false,
+  body_plaidImg: false,
+  head_brightEyesImg: false,
+  hand_coffeeImg: false,
+  head_imnotkuImg: false,
+  face_imnotkuImg: false,
+  head_graduationHatImg: false,
+  body_graduationSuitImg: false,
+  hand_bookImg: false,
 }
 
 export type CostumeKeys = keyof typeof defaultCostume
 
 export const costumeInfo = {
-  glasses: {
-    title: '맥북',
-    src: macbookImg,
+  bambooHat: {
+    title: '삿갓',
+    src: head_bambooHatImg,
   },
-  hair: {
-    title: '애플워치',
-    src: appleWatchImg,
+  armyCap: {
+    title: '군모',
+    src: head_armyCapImg,
   },
-  laptop: {
-    title: '노트북',
-    src: laptopImg,
+  imnotku: {
+    title: '나 쿠 아니다',
+    src: head_imnotkuImg,
   },
-  coffee: {
-    title: '커피',
-    src: coffeeImg,
+  airpod: {
+    title: '에어팟',
+    src: head_airPodsImg,
+  },
+  graduationHat: {
+    title: '학사모',
+    src: head_graduationHatImg,
+  },
+  blush: {
+    title: '연지곤지',
+    src: face_blushImg,
+  },
+  brightEyes: {
+    title: '초롱초롱',
+    src: face_brightEyesImg,
+  },
+  ahamed: {
+    title: '뽀옹',
+    src: face_ahamedImg,
+  },
+  happy: {
+    title: '발그레',
+    src: face_happyImg,
   },
   goggles: {
     title: '고글',
-    src: gogglesImg,
+    src: face_gogglesImg,
   },
-  headphones: {
-    title: '헤드폰',
-    src: headphonesImg,
+  notku: {
+    title: '뽕주디',
+    src: face_imnotkuImg,
   },
-  hairband: {
-    title: '농구 머리띠',
-    src: hairbandImg,
-  },
-  basketballVest: {
-    title: '농구 조끼',
-    src: basketballVestImg,
-  },
-  basketball: {
-    title: '농구 공',
-    src: basketballImg,
-  },
-  airpot: {
-    title: '에어팟',
-    src: airpotImg,
-  },
-  ballCap: {
-    title: '볼캡',
-    src: ballCapImg,
+  sunglasses: {
+    title: '선글라스',
+    src: face_sunglassesImg,
   },
   darkCircles: {
-    title: '다크써클',
-    src: darkCirclesImg,
+    title: '다크서클',
+    src: face_darkCircleImg,
   },
-  hardHat: {
-    title: '안전모',
-    src: hardHatImg,
+  glasses: {
+    title: '안경',
+    src: face_glassesImg,
   },
-  toast: {
-    title: '토스트',
-    src: toastImg,
+  roundGlasses: {
+    title: '동글안경',
+    src: face_roundGlassesImg,
   },
-  watch: {
+  weirdGlasses: {
+    title: '어지럽다쿠',
+    src: face_weirdGlassesImg,
+  },
+  apron: {
+    title: '앞치마',
+    src: body_apronImg,
+  },
+  roka: {
+    title: '로카티',
+    src: body_rokaImg,
+  },
+  whiteCoat: {
+    title: '백색 가운',
+    src: body_whiteCoatImg,
+  },
+  plaid: {
+    title: '체크남방',
+    src: body_plaidImg,
+  },
+  sweatSuit: {
+    title: '트레이닝복',
+    src: body_sweatSuitImg,
+  },
+  graduationSuit: {
+    title: '학위복',
+    src: body_graduationSuitImg,
+  },
+  macSpacegray: {
+    title: '맥북A',
+    src: hand_macSpacegrayImg,
+  },
+  macSilver: {
+    title: '맥북B',
+    src: hand_macSilverImg,
+  },
+  beaker: {
+    title: '비커',
+    src: hand_beakerImg,
+  },
+  appleWatch: {
     title: '애플워치',
-    src: watchImg,
+    src: hand_appleWatchImg,
   },
-  sneakers: {
-    title: '운동화',
-    src: sneakersImg,
+  bigBrush: {
+    title: '왕붓',
+    src: hand_bigBrushImg,
   },
-  cookie: {
-    title: '쿠키',
-    src: cookieImg,
+  milk: {
+    title: '우유',
+    src: hand_milkImg,
   },
-}
+  coffee: {
+    title: '커피',
+    src: hand_coffeeImg,
+  },
+  book: {
+    title: '회계원리',
+    src: hand_bookImg,
+  },
+  dog: {
+    title: '강아지',
+    src: hand_dogImg,
+  },
 
-const aplcu = {
-  glasses: false,
-  hair: false,
-  laptop: false,
-  coffee: false,
-  goggles: false,
-  hairband: false,
-  headphones: false,
-  basketball: false,
-  basketballVest: false,
-  airpot: false,
-  ballCap: false,
-  darkCircles: false,
-  hardHat: false,
-  toast: false,
-  watch: false,
-  sneakers: false,
-  cookie: false,
 }
 
 
 export const headInfo = {
-  glasses: {
-    title: '맥북',
-    src: macbookImg,
+  bambooHat: {
+    title: '삿갓',
+    src: head_bambooHatImg,
   },
-  hair: {
-    title: '애플워치',
-    src: appleWatchImg,
+  armyCap: {
+    title: '군모',
+    src: head_armyCapImg,
   },
-}
-
-export const bodyInfo = {
-  glasses: {
-    title: '맥북',
-    src: macbookImg,
+  imnotku: {
+    title: '나 쿠 아니다',
+    src: head_imnotkuImg,
   },
-  hair: {
-    title: '애플워치',
-    src: appleWatchImg,
+  airpod: {
+    title: '에어팟',
+    src: head_airPodsImg,
+  },
+  graduationHat: {
+    title: '학사모',
+    src: head_graduationHatImg,
   },
 }
 
 export const faceInfo = {
-  glasses: {
-    title: '맥북',
-    src: macbookImg,
+  blush: {
+    title: '연지곤지',
+    src: face_blushImg,
   },
-  hair: {
-    title: '애플워치',
-    src: appleWatchImg,
+  brightEyes: {
+    title: '초롱초롱',
+    src: face_brightEyesImg,
+  },
+  ahamed: {
+    title: '뽀옹',
+    src: face_ahamedImg,
+  },
+  happy: {
+    title: '발그레',
+    src: face_happyImg,
+  },
+  goggles: {
+    title: '고글',
+    src: face_gogglesImg,
+  },
+  notku: {
+    title: '뽕주디',
+    src: face_imnotkuImg,
+  },
+  sunglasses: {
+    title: '선글라스',
+    src: face_sunglassesImg,
+  },
+  darkCircles: {
+    title: '다크서클',
+    src: face_darkCircleImg,
+  },
+  glasses: {
+    title: '안경',
+    src: face_glassesImg,
+  },
+  roundGlasses: {
+    title: '동글안경',
+    src: face_roundGlassesImg,
+  },
+  weirdGlasses: {
+    title: '어지럽다쿠',
+    src: face_weirdGlassesImg,
   },
 }
 
+export const bodyInfo = {
+  apron: {
+    title: '앞치마',
+    src: body_apronImg,
+  },
+  roka: {
+    title: '로카티',
+    src: body_rokaImg,
+  },
+  whiteCoat: {
+    title: '백색 가운',
+    src: body_whiteCoatImg,
+  },
+  plaid: {
+    title: '체크남방',
+    src: body_plaidImg,
+  },
+  sweatSuit: {
+    title: '트레이닝복',
+    src: body_sweatSuitImg,
+  },
+  graduationSuit: {
+    title: '학위복',
+    src: body_graduationSuitImg,
+  },
+}
+
+
+
 export const handInfo = {
 
-  hair: {
+  macSpacegray: {
+    title: '맥북A',
+    src: hand_macSpacegrayImg,
+  },
+  macSilver: {
+    title: '맥북B',
+    src: hand_macSilverImg,
+  },
+  beaker: {
+    title: '비커',
+    src: hand_beakerImg,
+  },
+  appleWatch: {
     title: '애플워치',
-    src: appleWatchImg,
+    src: hand_appleWatchImg,
+  },
+  bigBrush: {
+    title: '왕붓',
+    src: hand_bigBrushImg,
+  },
+  milk: {
+    title: '우유',
+    src: hand_milkImg,
+  },
+  coffee: {
+    title: '커피',
+    src: hand_coffeeImg,
+  },
+  book: {
+    title: '회계원리',
+    src: hand_bookImg,
+  },
+  dog: {
+    title: '강아지',
+    src: hand_dogImg,
   },
 }
 
