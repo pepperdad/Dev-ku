@@ -1,5 +1,4 @@
 <script lang="ts">
-  import devJeans from './assets/dev-jeans.png'
   import devKu from './assets/dev-ku.png'
   import {fabric} from 'fabric'
   import {onMount} from 'svelte'
@@ -72,11 +71,11 @@
 
 <footer style={`width: ${$width}`}>
   <span>
-    Instagram: <a href="https://www.instagram.com/dev_hee/">@dev_hee</a>
+    Instagram: <a href="https://www.instagram.com/그치만해냈조/">@그치만해냈조</a>
   </span>
-  <span>
+  <!-- <span>
     Blog: <a href="https://velog.io/@heelieben">@pigme</a>
-  </span>
+  </span> -->
   {#if !isLocalhost}
     <a href="https://hits.sh/devjeans.dev-hee.com/"
       ><img
