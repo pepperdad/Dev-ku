@@ -15,7 +15,7 @@
   })
 
   const createImage = () => {
-    fabric.Image.fromURL(watermark, function (img) {
+    fabric.Image.fromURL(null, function (img) {
       img.scaleToWidth($width)
       img.scaleToWidth($width)
       img.selectable = false
@@ -31,7 +31,7 @@
 
   const saveImage = () => {
     const link = document.createElement('a')
-    link.download = 'dev-jeans.png'
+    link.download = 'dev-ku.png'
     link.href = resultImage
     link.click()
   }
