@@ -1,7 +1,6 @@
 <script lang="ts">
   import {fabric} from 'fabric'
   import {canvas, width} from 'src/store/canvas'
-  import watermark from 'src/assets/watermark.png'
   import Modal from '../Modal/Modal.svelte'
   import {onMount} from 'svelte'
   import {logEvent} from 'firebase/analytics'
