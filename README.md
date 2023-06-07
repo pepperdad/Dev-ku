@@ -5,6 +5,6 @@
 <img src="/src/assets/dev-ku.png" width="300" />
 <img src="/src/assets/dev-ku_1.png" width="300"/>
 
+> 그래서 만들었다 [데브쿠 페이지](http://www.dev-ku.shop/)
 
-> 그래서 만들었다 [데브쿠 페이지](http://15.164.9.145/)
 
