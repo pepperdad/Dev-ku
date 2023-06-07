@@ -85,11 +85,17 @@
     const category_body_btn = document.getElementById('category_body_btn')
     const category_hand_btn = document.getElementById('category_hand_btn')
 
-    category_all_btn.style.backgroundColor = '#7ea338'
+    category_all_btn.style.backgroundColor = '#50ea89'
     category_head_btn.style.backgroundColor = 'white'
     category_face_btn.style.backgroundColor = 'white'
     category_body_btn.style.backgroundColor = 'white'
     category_hand_btn.style.backgroundColor = 'white'
+
+    category_all_btn.style.color = 'white'
+    category_head_btn.style.color = 'black'
+    category_face_btn.style.color = 'black'
+    category_body_btn.style.color = 'black'
+    category_hand_btn.style.color = 'black'
 
     allBtn.style.display = 'block'
     headBtn.style.display = 'none'
@@ -112,10 +118,16 @@
     const category_hand_btn = document.getElementById('category_hand_btn')
 
     category_all_btn.style.backgroundColor = 'white'
-    category_head_btn.style.backgroundColor = '#7ea338'
+    category_head_btn.style.backgroundColor = '#50ea89'
     category_face_btn.style.backgroundColor = 'white'
     category_body_btn.style.backgroundColor = 'white'
     category_hand_btn.style.backgroundColor = 'white'
+
+    category_all_btn.style.color = 'black'
+    category_head_btn.style.color = 'white'
+    category_face_btn.style.color = 'black'
+    category_body_btn.style.color = 'black'
+    category_hand_btn.style.color = 'black'
 
     allBtn.style.display = 'none'
     headBtn.style.display = 'block'
@@ -139,9 +151,15 @@
 
     category_all_btn.style.backgroundColor = 'white'
     category_head_btn.style.backgroundColor = 'white'
-    category_face_btn.style.backgroundColor = '#7ea338'
+    category_face_btn.style.backgroundColor = '#50ea89'
     category_body_btn.style.backgroundColor = 'white'
     category_hand_btn.style.backgroundColor = 'white'
+
+    category_all_btn.style.color = 'black'
+    category_head_btn.style.color = 'black'
+    category_face_btn.style.color = 'white'
+    category_body_btn.style.color = 'black'
+    category_hand_btn.style.color = 'black'
 
     allBtn.style.display = 'none'
     headBtn.style.display = 'none'
@@ -166,8 +184,14 @@
     category_all_btn.style.backgroundColor = 'white'
     category_head_btn.style.backgroundColor = 'white'
     category_face_btn.style.backgroundColor = 'white'
-    category_body_btn.style.backgroundColor = '#7ea338'
+    category_body_btn.style.backgroundColor = '#50ea89'
     category_hand_btn.style.backgroundColor = 'white'
+
+    category_all_btn.style.color = 'black'
+    category_head_btn.style.color = 'black'
+    category_face_btn.style.color = 'black'
+    category_body_btn.style.color = 'white'
+    category_hand_btn.style.color = 'black'
 
     allBtn.style.display = 'none'
     headBtn.style.display = 'none'
@@ -193,7 +217,13 @@
     category_head_btn.style.backgroundColor = 'white'
     category_face_btn.style.backgroundColor = 'white'
     category_body_btn.style.backgroundColor = 'white'
-    category_hand_btn.style.backgroundColor = '#7ea338'
+    category_hand_btn.style.backgroundColor = '#50ea89'
+
+    category_all_btn.style.color = 'black'
+    category_head_btn.style.color = 'black'
+    category_face_btn.style.color = 'black'
+    category_body_btn.style.color = 'black'
+    category_hand_btn.style.color = 'white'
 
     allBtn.style.display = 'none'
     headBtn.style.display = 'none'
@@ -374,15 +404,7 @@
   ul {
     list-style-type: disc;
   }
-  button:hover,
-  button.active {
-    background: #7ea338;
-    /* color: white; */
-  }
-  button:visited {
-    background: #7ea338;
-    color: white;
-  }
+
   button {
     border: 0;
   }
