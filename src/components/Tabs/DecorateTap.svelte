@@ -96,7 +96,6 @@
     faceBtn.style.display = 'none'
     bodyBtn.style.display = 'none'
     handBtn.style.display = 'none'
-    console.log('all')
   }
 
   const headActive = () => {
@@ -118,7 +117,6 @@
     category_body_btn.style.backgroundColor = 'white'
     category_hand_btn.style.backgroundColor = 'white'
 
-    console.log('head')
     allBtn.style.display = 'none'
     headBtn.style.display = 'block'
     faceBtn.style.display = 'none'
@@ -145,7 +143,6 @@
     category_body_btn.style.backgroundColor = 'white'
     category_hand_btn.style.backgroundColor = 'white'
 
-    console.log('head')
     allBtn.style.display = 'none'
     headBtn.style.display = 'none'
     faceBtn.style.display = 'block'
@@ -172,7 +169,6 @@
     category_body_btn.style.backgroundColor = '#7ea338'
     category_hand_btn.style.backgroundColor = 'white'
 
-    console.log('head')
     allBtn.style.display = 'none'
     headBtn.style.display = 'none'
     faceBtn.style.display = 'none'
@@ -204,7 +200,6 @@
     faceBtn.style.display = 'none'
     bodyBtn.style.display = 'none'
     handBtn.style.display = 'block'
-    console.log('hand')
   }
 </script>
 

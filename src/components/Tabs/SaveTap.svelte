@@ -14,6 +14,7 @@
   })
 
   const createImage = () => {
+    // 워터마크 삭제
     fabric.Image.fromURL(null, function (img) {
       img.scaleToWidth($width)
       img.scaleToWidth($width)
