@@ -63,7 +63,7 @@
 </script>
 
 <main style={`width: ${width}`}>
-  <h1>~데브쿠 짤 만들어 쓰기~</h1>
+  <h1>~나만의 쿠를 만들어보자~</h1>
   <canvas id="canvas" width="2400" height="2400" style="border:1px solid #ccc" />
 </main>
 
@@ -71,19 +71,11 @@
 
 <footer style={`width: ${$width}`}>
   <span>
-    Instagram: <a href="https://www.instagram.com/그치만해냈조/">@그치만해냈조</a>
+    Instagram: <a href="https://www.instagram.com/develop_ku/">@그치만해냈조</a>
   </span>
   <!-- <span>
     Blog: <a href="https://velog.io/@heelieben">@pigme</a>
   </span> -->
-  {#if !isLocalhost}
-    <a href="https://hits.sh/devjeans.dev-hee.com/"
-      ><img
-        alt="Hits"
-        src="https://hits.sh/devjeans.dev-hee.com.svg?view=today-total&style=for-the-badge&color=f1c164&labelColor=284d8e"
-      /></a
-    >
-  {/if}
 </footer>
 
 <style>
