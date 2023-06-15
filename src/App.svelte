@@ -11,7 +11,7 @@
 
   const getWidth = () => {
     if (window.innerWidth < 600) return window.innerWidth
-    return 600
+    return 500 // 사이즈 600 -> 500
   }
 
   const initCanvas = () => {
@@ -71,11 +71,10 @@
 
 <footer style={`width: ${$width}`}>
   <span>
-    Instagram: <a href="https://www.instagram.com/develop_ku/">@그치만해냈조</a>
+    Instagram: <a href="https://www.instagram.com/develop_ku/">@그치만해냈죠</a>
   </span>
-  <!-- <span>
-    Blog: <a href="https://velog.io/@heelieben">@pigme</a>
-  </span> -->
+
+  <span> 일러스트: ssj100207@konkuk.ac.kr </span>
 </footer>
 
 <style>
@@ -88,11 +87,12 @@
   }
   main,
   footer {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: rgb(56, 56, 56);
+    text-align: center;
   }
   footer {
     flex-direction: row;
