@@ -4,7 +4,6 @@ import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/dev-jeans/',
   plugins: [svelte()],
   resolve: {
     alias: {
